@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$color-box: rgb(247, 2, 137);
+$font-family: Georgia;
+$font-weight: (
+    "regular" : 300,
+    "medium" : 500,
+    "semiBold" : 600,
+    "bold" : 700
+);
+
+@function weight($weight-name) {
+    @return map-get($font-weight , $weight-name )
+};
+
+@mixin boxStyle{
+   width: 20%;
+   height: 300px;
+   float: left;
+   border: 5px solid white; 
+   background: $color-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 18px;
+   font-weight: weight(medium)
+}
+
+.main{
+    .refreshButton{
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        background: #f51f95a6;
+        font-weight:weight(medium);
+        font-size: 20px;
+        color:white;
+        cursor: pointer;
+        border-bottom: 5px solid #ddd;
+        margin-bottom: 40px;
+    }
+    .motherContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .motherContainer__box{
+            @include boxStyle
+        }
+    }
+}

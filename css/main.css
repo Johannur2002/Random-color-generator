@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main .refreshButton {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  outline: none;
+  background: #f51f95a6;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border-bottom: 5px solid #ddd;
+  margin-bottom: 40px;
+}
+
+.main .motherContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .motherContainer .motherContainer__box {
+  width: 20%;
+  height: 300px;
+  float: left;
+  border: 5px solid white;
+  background: #f70289;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=main.css.map */
